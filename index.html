@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">To Be Continued (Sky Lounge) </div>
+            <nav class="nav-menu">
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-right">
+                <button class="btn-order">Order Online</button>
+                <button class="btn-reserve">Reserve Table</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="decorative-line"></div>
+            <h1 class="hero-title">
+                EXPERIENCE THE BEST OF<br>
+                <span class="cuisine-types">CONTINENTAL · ITALIAN · ASIAN<br>
+                NORTH INDIAN · SOUTH INDIAN<br>
+                BIRYANI · Desserts · Beverages </span> 
+            </h1>
+            <p class="hero-subtitle">
+                <strong>Savor</strong> a diverse culinary journey of gourmet<br>
+                dishes from around the world in an<br>
+                elegant, upscale setting
+            </p>
+            <p class="hours">⏰ OPEN DAILY | 11 AM - 1 AM</p>
+            <button class="btn-reserve-large">RESERVE YOUR TABLE</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-wrapper">
+            <div class="decorative-sidebar">
+                <div class="food-illustration leaf-1"></div>
+                <div class="food-illustration garlic"></div>
+                <div class="food-illustration leaf-2"></div>
+                <div class="food-illustration tomato"></div>
+                <div class="food-illustration cheese"></div>
+                <div class="food-illustration leaf-3"></div>
+            </div>
+            <div class="container">
+                <div class="decorative-divider"></div>
+                <h2 class="section-title">Culinary Excellence Awaits You</h2>
+                <p class="section-description">
+                    Explore our diverse menu, crafted to satisfy every palate, from <strong>savory<br>
+                    appetizers</strong> to indulgent desserts. Enjoy the finest<br>
+                    ingredients, expertly prepared by our skilled chefs.
+                </p>
+                <div class="button-group">
+                    <button class="btn-outline">VIEW GALLERY</button>
+                    <button class="btn-outline">FIND US</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Gallery -->
+    <section class="menu-gallery">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/continental.jpg" alt="Continental & Italian">
+                <div class="gallery-caption">Continental & Italian</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/asian.jpg" alt="Asian & Indian">
+                <div class="gallery-caption">Asian & Indian</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/biryani.png" alt="Biryani & Desserts">
+                <div class="gallery-caption">Biryani & Desserts</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/beverages.png" alt="Beers & Beverages">
+                <div class="gallery-caption">Craft Beers & Beverages</div>
+            </div>
+        </div>
+        <div class="decorative-divider"></div>
+        <div class="button-group">
+            <button class="btn-dark">VIEW GALLERY</button>
+            <button class="btn-outline">FIND US</button>
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Reserve Your Table</h2>
+            <form id="reservationForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="date" id="date" required>
+                <input type="time" id="time" required>
+                <input type="number" id="guests" placeholder="Number of Guests" min="1" required>
+                <button type="submit" class="btn-submit">CONFIRM RESERVATION</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
